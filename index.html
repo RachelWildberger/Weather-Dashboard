@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+      <div class="city-search">
+        <h2>Weather Dashboard</h2>
+        <form id="city-form" method="POST">
+          <div class="city-input">
+            <input type="text" name="city" id="city" placeholder="Search for a city" />
+            <button id="search">Search</button>
+            <hr>
+          </div>
+          <span id="city-count"></span>
+      <ul id="city-list"></ul>
+    </div>
+    <div id="dashboard">
+        <div class="today-highlights">
+        <h2>Today's Highlights</h2>
+        <hr>
+        <div class="today">
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <p><span class="weather" id="today-date"></span>Date: </p>
+            <p><span class="temp" id="today-temp"></span>Temp: </p>
+            <p><span class="wind" id="today-wind"></span>Wind: </p>
+            <p><span class="humidity" id="today-humidity"></span>Humidity: </p>
+        </div>
+        <div class="week-timeline">
+            <h2>Week Timeline</h2>
+            <hr>
+            <div id ="day-forcast"> 
+                <div class="day1"> 
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                    <p><span class="weather" id="day1-date"></span>Date: </p>
+                    <p><span class="temp" id="day1-temp"></span>Temp: </p>
+                    <p><span class="wind" id="day1-wind"></span>Wind: </p>
+                    <p><span class="humidity" id="day1-humidity"></span>Humidity: </p>
+                </div>
+                <div class="day2"> 
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                    <p><span class="weather" id="day2-date"></span>Date: </p>
+                    <p><span class="temp" id="day2-temp"></span>Temp: </p>
+                    <p><span class="wind" id="day2-wind"></span>Wind: </p>
+                    <p><span class="humidity" id="day2-humidity"></span>Humidity: </p>
+                </div>
+                <div class="day3"> 
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                    <p><span class="weather" id="day3-date"></span>Date: </p>
+                    <p><span class="temp" id="day3-temp"></span>Temp: </p>
+                    <p><span class="wind" id="day3-wind"></span>Wind: </p>
+                    <p><span class="humidity" id="day3-humidity"></span>Humidity: </p>
+                </div>
+                <div class="day4"> 
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                    <p><span class="weather" id="day4-date"></span>Date: </p>
+                    <p><span class="temp" id="day4-temp"></span>Temp: </p>
+                    <p><span class="wind" id="day4-wind"></span>Wind: </p>
+                    <p><span class="humidity" id="day4-humidity"></span>Humidity: </p>
+                </div>
+                <div class="day5"> 
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                    <p><span class="weather" id="day5-date"></span>Date: </p>
+                    <p><span class="temp" id="day5-temp"></span>Temp: </p>
+                    <p><span class="wind" id="day5-wind"></span>Wind: </p>
+                    <p><span class="humidity" id="day5-humidity"></span>Humidity: </p>
+                </div>
+            </div>
+
+           
+
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
