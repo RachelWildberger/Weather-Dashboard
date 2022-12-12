@@ -1,4 +1,4 @@
-var cityList = document.querySelector("#city-list");
+var cityList = document.querySelector(".city-list");
 var cityForm = document.querySelector("#city-form");
 var cityInput = document.querySelector("#city-text");
 
@@ -17,7 +17,7 @@ function renderCities() {
         var button = document.createElement("button");
         button.textContent = "Search";
     
-        li.appendChild(button);
+        // li.appendChild(button);
 
         cityList.appendChild(li);
     }
