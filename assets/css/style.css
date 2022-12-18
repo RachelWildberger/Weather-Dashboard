@@ -1,19 +1,20 @@
 :root {
   --blue: #144A61;
-  --lightblue: #30ABE0;
+  --lightblue: #0d4056;
 }
 
 
 .container-fluid {
-  background-color: var(--lightblue);
+  background-color: var(--blue);
 }
+
 
 h1 {
   color: #fff;
 }
 
 .card {
-  background-color: var(--lightblue);
+  background-color: var(--blue);
 }
 
 .card p {
@@ -23,3 +24,15 @@ h1 {
 .custom button {
   background-color: var(--lightblue);
 }
+
+.btn {
+  --bs-btn-bg: var(--blue);
+  --bs-btn-border-radius: .0rem;
+  --bs-btn-hover-color: var(--lightblue);
+  --bs-btn-hover-bg: #{shade-color($bd-blue, 10%)};
+
+}
+
+
+
+

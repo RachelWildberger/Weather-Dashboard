@@ -32,18 +32,24 @@
       <div class="row">
         <div class="col-12 col-md-4 col-lg-3">
           <div class="city-search">
-            <form id="city-form" method="POST">
+            <form id="city-form">
+              <h5 class="mt-2">Search for a City:</h5>
               <div class="city-input">
-                <input type="text" name="city" id="city-text" placeholder="Search for a city" />
-                <input type="button" value="Search" id="search" />
-                  <hr>
-                  <ul type="button" id="city-list" class="list-group">
-                    <li class="list-group-item"></li>
-                  </ul>
+
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Enter a city" aria-label="Enter a city" aria-describedby="button-addon2" id="city-text">
+                  <button class="btn btn-dark" type="button" id="submit-button">Submit</button>
                 </div>
-              </div>
             </form>
+                <button class="btn btn-dark btn-block my-2" style="width: 100%" type="button" id="clear-button">Clear History</button> 
+                <ul class="list-group" type="button" id="city-list">
+                  <li class="list-group-item"></li>
+
+                </ul>
           </div>
+        </div>
+
+        </div>
 
  <!-- Today Highlights -->         
           <div class="col-12 col-md-8 col-lg-9">
@@ -80,14 +86,14 @@
                 <div id ="future-forcast">
 
                   <div id="day1"> 
-                    <div class="col-12 mb-3">
+                    <!-- <div class="col-12 mb-3"> -->
                     <div class="card">
                       <div class="card-body">
-                        <i class="fas fa-sun" aria-hidden="true"></i>
-                          <p><span class="weather" id="day1-date"></span>Date: 12/12/2022</p>
-                          <p><span class="temp" id="day1-temp"></span>Temp: 50º</p>
-                          <p><span class="wind" id="day1-wind"></span>Wind: 45 MPH</p>
-                          <p><span class="humidity" id="day1-humidity"></span>Humidity: 80%</p>
+                        <img class="icon" />
+                          <p>Date: <span class="weather" id="day1-date"></span></p>
+                          <p>Temp: <span class="temp" id="day1-temp"></span>°</p>
+                          <p>Wind: <span class="wind" id="day1-wind"></span>MPH</p>
+                          <p>Humidity: <span class="humidity" id="day1-humidity"></span>%</p>
                       </div>
                     </div>
                   </div>  
@@ -96,11 +102,11 @@
                     <div class="col-12 mb-3">
                     <div class="card">
                       <div class="card-body">
-                        <i class="fas fa-sun" aria-hidden="true"></i>
-                          <p><span class="weather" id="day2-date"></span>Date: 12/12/2022</p>
-                          <p><span class="temp" id="day2-temp"></span>Temp: 50º</p>
-                          <p><span class="wind" id="day2-wind"></span>Wind: 45 MPH</p>
-                          <p><span class="humidity" id="day2-humidity"></span>Humidity: 80%</p>
+                        <img class="icon" />
+                          <p>Date: <span class="weather" id="day2-date"></span></p>
+                          <p>Temp: <span class="temp" id="day2-temp"></span>°</p>
+                          <p>Wind: <span class="wind" id="day2-wind"></span>MPH</p>
+                          <p>Humidity: <span class="humidity" id="day2-humidity"></span>%</p>
                       </div>
                     </div>
                   </div>
@@ -111,11 +117,11 @@
                     <div class="col-12 mb-3">
                     <div class="card">
                       <div class="card-body">
-                        <i class="fas fa-sun" aria-hidden="true"></i>
-                          <p><span class="weather" id="day3-date"></span>Date: 12/12/2022</p>
-                          <p><span class="temp" id="day3-temp"></span>Temp: 50º</p>
-                          <p><span class="wind" id="day3-wind"></span>Wind: 45 MPH</p>
-                          <p><span class="humidity" id="day3-humidity"></span>Humidity: 80%</p>
+                        <img class="icon" />
+                          <p>Date: <span class="weather" id="day3-date"></span></p>
+                          <p>Temp: <span class="temp" id="day3-temp"></span>°</p>
+                          <p>Wind: <span class="wind" id="day3-wind"></span>MPH</p>
+                          <p>Humidity: <span class="humidity" id="day3-humidity"></span>%</p>
                       </div>
                     </div>
                   </div>
@@ -126,11 +132,11 @@
                     <div class="col-12 mb-3">
                     <div class="card">
                       <div class="card-body">
-                        <i class="fas fa-sun" aria-hidden="true"></i>
-                          <p><span class="weather" id="day4-date"></span>Date: 12/12/2022</p>
-                          <p><span class="temp" id="day4-temp"></span>Temp: 50º</p>
-                          <p><span class="wind" id="day4-wind"></span>Wind: 45 MPH</p>
-                          <p><span class="humidity" id="day4-humidity"></span>Humidity: 80%</p>
+                        <img class="icon" />
+                          <p>Date: <span class="weather" id="day4-date"></span></p>
+                          <p>Temp: <span class="temp" id="day4-temp"></span>°</p>
+                          <p>Wind: <span class="wind" id="day4-wind"></span>MPH</p>
+                          <p>Humidity: <span class="humidity" id="day4-humidity"></span>%</p>
                       </div>
                     </div>
                   </div>
@@ -141,11 +147,11 @@
                     <div class="col-12 mb-3">
                     <div class="card">
                       <div class="card-body">
-                        <i class="fas fa-sun" aria-hidden="true"></i>
-                          <p><span class="weather" id="day5-date"></span>Date: 12/12/2022</p>
-                          <p><span class="temp" id="day5-temp"></span>Temp: 50º</p>
-                          <p><span class="wind" id="day5-wind"></span>Wind: 45 MPH</p>
-                          <p><span class="humidity" id="day5-humidity"></span>Humidity: 80%</p>
+                        <img class="icon" />
+                          <p>Date: <span class="weather" id="day5-date"></span></p>
+                          <p>Temp: <span class="temp" id="day5-temp"></span>°</p>
+                          <p>Wind: <span class="wind" id="day5-wind"></span>MPH</p>
+                          <p>Humidity: <span class="humidity" id="day5-humidity"></span>%</p>
                       </div>
                     </div>
                   </div>
