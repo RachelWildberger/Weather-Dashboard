@@ -33,5 +33,12 @@ h1 {
 
 }
 
+form {
 
+    --bs-btn-bg: var(--blue);
+    --bs-btn-border-radius: .0rem;
+    --bs-btn-hover-color: var(--lightblue);
+    --bs-btn-hover-bg: #{shade-color($bd-blue, 10%)};
+  
+  }
 
