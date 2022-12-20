@@ -72,19 +72,19 @@ function renderTodayWeather(data) {
   var todayTempEl = document.getElementById("today-temp");
   var todayWindEl = document.getElementById("today-wind");
   var todayHumidEl = document.getElementById("today-humidity");
-  var iconUrlEl = "https://openweathermap.org/img/wn/" + iconCode + ".png";
+  // let locationIcon = document.querySelector("current-icon");
   var cityNameEl = document.getElementById("city-name");
 
   // var date = 
   var cityName = data.name;
-  var iconCode = data.weather[0].icon;  
+  // var iconCode = data.weather[0].icon;  
   var todayTemp = data.main.temp;
   var todayWind = data.wind.speed;
   var todayHumid = data.wind.speed;
 
   todayTempEl.textContent = `Temp: ${todayTemp} °`;
   todayWindEl.textContent = `Wind: ${todayWind} MPH`;
-  iconUrlEl.textContent = ` ${iconCode}`;
+  // locationIcon.textContent = `"http://openweathermap.org/img/w/" + ${iconCode} + ".png";`;
   todayHumidEl.textContent = `Humidity: ${todayHumid} %`;
   cityNameEl.textContent = `${cityName}`;
 
